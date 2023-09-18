@@ -1,0 +1,1 @@
+﻿alter table UserReport add Reported_date date;

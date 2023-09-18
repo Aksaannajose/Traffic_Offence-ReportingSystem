@@ -1,0 +1,1 @@
+﻿create table UserReport(Rid int Primary key,Complaint varchar(100),Offence_category varchar(200),Vehicle_Model varchar(50),Number_Plate varchar(50),Vehicle_Name varchar(50),Upload_Image varchar(100),Location_Details varchar(50),Location_Image varchar(100));

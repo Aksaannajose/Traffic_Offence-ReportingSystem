@@ -1,0 +1,1 @@
+﻿create table TrafficPoliceRegistration(Rid int Primary key,Station_name varchar(50),Station_address varchar(50),Station_city varchar(50),Station_state varchar(50),Station_contact varchar(50),Station_email varchar(50),Username varchar(50));

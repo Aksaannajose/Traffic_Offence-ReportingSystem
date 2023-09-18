@@ -1,0 +1,1 @@
+﻿create table UserRegistrationtbl(Userid int Primary key,Name varchar(50),Address varchar(50),City varchar(50),State varchar(50),Contact_num varchar(50),Gender varchar(50),Email varchar(50),Image varchar(50),Username varchar(50) Foreign key(Username)References Login (Username));

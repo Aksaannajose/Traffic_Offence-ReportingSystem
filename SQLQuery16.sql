@@ -1,0 +1,1 @@
+﻿create table allmail(e_id int primary key,mailid varchar(30),Usertype varchar(30),Username varchar(50));

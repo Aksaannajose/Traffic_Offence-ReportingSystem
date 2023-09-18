@@ -1,0 +1,1 @@
+﻿create table TrafficRule(Ruleid int Primary key,Rules varchar(100));
