@@ -1,0 +1,415 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92A48DFB-04AC-4197-AA2B-90983FACD4EE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Traffic_offence_reporting_system</RootNamespace>
+    <AssemblyName>Traffic offence reporting system</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44359</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AcceReject.aspx" />
+    <Content Include="AddOffenceCategory.aspx" />
+    <Content Include="AddState.aspx" />
+    <Content Include="AddTrafficRules.aspx" />
+    <Content Include="AddVehicleType.aspx" />
+    <Content Include="AdminDelete.aspx" />
+    <Content Include="AdminHome.aspx" />
+    <Content Include="Alert.aspx" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="compose.aspx" />
+    <Content Include="download.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="HOME.aspx" />
+    <Content Include="images\2564654-untitled-design-2023-01-04t213820.716.jpg" />
+    <Content Include="images\Delhi-Traffic.jpg" />
+    <Content Include="images\images %282%29.jpg" />
+    <Content Include="images\imgbin-computer-icons-avatar-user-login-avatar-man-wearing-blue-shirt-illustration-mJrXLG07YnZUc2bH5pGfFKUhX.jpg" />
+    <Content Include="images\istockphoto-1224774389-170667a.jpg" />
+    <Content Include="images\istockphoto-544795666-612x612.jpg" />
+    <Content Include="images\Road.jpeg" />
+    <Content Include="images\traffic.jpg" />
+    <Content Include="inbox.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="OffenderHome.aspx" />
+    <Content Include="Payment.aspx" />
+    <Content Include="send.aspx" />
+    <Content Include="SendEmail.aspx" />
+    <Content Include="SendMessage.aspx" />
+    <Content Include="TrafficPoliceHome.aspx" />
+    <Content Include="TrafficPoliceRegistration.aspx" />
+    <Content Include="TrafficRules.aspx" />
+    <Content Include="UserHome.aspx" />
+    <Content Include="UserProfileEdit.aspx" />
+    <Content Include="UserProfileView.aspx" />
+    <Content Include="UserRegistration.aspx" />
+    <Content Include="UserReport.aspx" />
+    <Content Include="UserRequest.aspx" />
+    <Content Include="UserViewTraffcRule.aspx" />
+    <Content Include="ViewTrafficPolice.aspx" />
+    <Content Include="ViewUserRep.aspx" />
+    <Content Include="ViewUserReq.aspx" />
+    <Content Include="ViewUserRequest.aspx" />
+    <Content Include="ViewUserReport.aspx" />
+    <Content Include="ViewUsers.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcceReject.aspx.cs">
+      <DependentUpon>AcceReject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcceReject.aspx.designer.cs">
+      <DependentUpon>AcceReject.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddOffenceCategory.aspx.cs">
+      <DependentUpon>AddOffenceCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddOffenceCategory.aspx.designer.cs">
+      <DependentUpon>AddOffenceCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddState.aspx.cs">
+      <DependentUpon>AddState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddState.aspx.designer.cs">
+      <DependentUpon>AddState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddTrafficRules.aspx.cs">
+      <DependentUpon>AddTrafficRules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddTrafficRules.aspx.designer.cs">
+      <DependentUpon>AddTrafficRules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddVehicleType.aspx.cs">
+      <DependentUpon>AddVehicleType.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddVehicleType.aspx.designer.cs">
+      <DependentUpon>AddVehicleType.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDelete.aspx.cs">
+      <DependentUpon>AdminDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDelete.aspx.designer.cs">
+      <DependentUpon>AdminDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Alert.aspx.cs">
+      <DependentUpon>Alert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Alert.aspx.designer.cs">
+      <DependentUpon>Alert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="compose.aspx.cs">
+      <DependentUpon>compose.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="compose.aspx.designer.cs">
+      <DependentUpon>compose.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="conctn.cs" />
+    <Compile Include="download.aspx.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="download.aspx.designer.cs">
+      <DependentUpon>download.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HOME.aspx.cs">
+      <DependentUpon>HOME.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HOME.aspx.designer.cs">
+      <DependentUpon>HOME.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inbox.aspx.cs">
+      <DependentUpon>inbox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inbox.aspx.designer.cs">
+      <DependentUpon>inbox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OffenderHome.aspx.cs">
+      <DependentUpon>OffenderHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OffenderHome.aspx.designer.cs">
+      <DependentUpon>OffenderHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.aspx.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment.aspx.designer.cs">
+      <DependentUpon>Payment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="send.aspx.cs">
+      <DependentUpon>send.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="send.aspx.designer.cs">
+      <DependentUpon>send.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendEmail.aspx.cs">
+      <DependentUpon>SendEmail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendEmail.aspx.designer.cs">
+      <DependentUpon>SendEmail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SendMessage.aspx.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SendMessage.aspx.designer.cs">
+      <DependentUpon>SendMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrafficPoliceHome.aspx.cs">
+      <DependentUpon>TrafficPoliceHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrafficPoliceHome.aspx.designer.cs">
+      <DependentUpon>TrafficPoliceHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrafficPoliceRegistration.aspx.cs">
+      <DependentUpon>TrafficPoliceRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrafficPoliceRegistration.aspx.designer.cs">
+      <DependentUpon>TrafficPoliceRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TrafficRules.aspx.cs">
+      <DependentUpon>TrafficRules.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrafficRules.aspx.designer.cs">
+      <DependentUpon>TrafficRules.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfileEdit.aspx.cs">
+      <DependentUpon>UserProfileEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserProfileEdit.aspx.designer.cs">
+      <DependentUpon>UserProfileEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfileView.aspx.cs">
+      <DependentUpon>UserProfileView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserProfileView.aspx.designer.cs">
+      <DependentUpon>UserProfileView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRegistration.aspx.designer.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserReport.aspx.cs">
+      <DependentUpon>UserReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserReport.aspx.designer.cs">
+      <DependentUpon>UserReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserRequest.aspx.cs">
+      <DependentUpon>UserRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserRequest.aspx.designer.cs">
+      <DependentUpon>UserRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserViewTraffcRule.aspx.cs">
+      <DependentUpon>UserViewTraffcRule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserViewTraffcRule.aspx.designer.cs">
+      <DependentUpon>UserViewTraffcRule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTrafficPolice.aspx.cs">
+      <DependentUpon>ViewTrafficPolice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewTrafficPolice.aspx.designer.cs">
+      <DependentUpon>ViewTrafficPolice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUserRep.aspx.cs">
+      <DependentUpon>ViewUserRep.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewUserRep.aspx.designer.cs">
+      <DependentUpon>ViewUserRep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUserReq.aspx.cs">
+      <DependentUpon>ViewUserReq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewUserReq.aspx.designer.cs">
+      <DependentUpon>ViewUserReq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUserRequest.aspx.cs">
+      <DependentUpon>ViewUserRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewUserRequest.aspx.designer.cs">
+      <DependentUpon>ViewUserRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUserReport.aspx.cs">
+      <DependentUpon>ViewUserReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewUserReport.aspx.designer.cs">
+      <DependentUpon>ViewUserReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUsers.aspx.cs">
+      <DependentUpon>ViewUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewUsers.aspx.designer.cs">
+      <DependentUpon>ViewUsers.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51544</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44359/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
